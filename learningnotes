@@ -1,0 +1,52 @@
+实践学习笔记
+一、学习资料来源、链接
+【Github 新手够用指南 | 全程演示&个人找项目技巧放送】 https://www.bilibili.com/video/BV1e541137Tc/?share_source=copy_web&vd_source=2d1173d6ac308767b64c225e89de44db
+【『教程』一看就懂！Github基础教程】 https://www.bilibili.com/video/BV1hS4y1S7wL/?share_source=copy_web&vd_source=2d1173d6ac308767b64c225e89de44db
+嵌入式必学！GitHub保姆级教程 http://xhslink.com/a/UCwTbvT6t4bcb
+新生儿必备的Git命令指南！ http://xhslink.com/a/z4skm3lg74bcb
+关于GitHub打不开的解决办法 http://xhslink.com/a/bojZA3B1K4bcb
+Git图解 https://marklodato.github.io/visual-git-guide/index-zh-cn.html
+二、实践流程
+注册GitHub：
+1.打开官网注册github账号
+安装配置Git：
+1.安装Git
+2.配置Git
+3.打开Git Bash 开始设置：
+运行 git config --global user.name “”
+运行 git config --global user.email “”
+检查设置：
+git config user.name 
+git config user.email
+创建GitHub仓库：
+1.点击页面右上角的“+”号，选择"New repository"
+2.填写仓库信息:
+仓库名称：给你的仓库起个名字。
+描述：简短描述仓库的内容。
+公共或私有：选择仓库的可见性
+初始化仓库：可选勾选初始化仓库，添加README、.gitignore或许可证文件（不明白功能的选项就保持默认即可）
+4.创建仓库:点击"Create repository"
+克隆仓库到本地：
+1.获取仓库URL：在GitHub仓库页面找到“Code”按钮下的URL
+2.打开Git Bash或终端：切换到你想存放项目的本地目录
+3.克隆仓库：运行git clone （https://github.com/yourusername/yourrepository.git(需要替换为自己仓库的额真是地址）
+4.进入仓库目录:运行cd yourrepository
+三、遇到的困难及解决方法
+GitHub打不开的解决办法：
+1.打开edge浏览器，找到页面三个小点，点击后找到“扩展”并点击
+2.进入扩展商店后在搜索栏输入GitHub，点击安装
+3.安装完毕后，找到“扩展”并点击，然后点击安装好的“GitHub镜像加速”
+4.点“立即检测”，然后等待一小会儿就加速成功了
+四、心得总结
+总结：
+Git工作流程三区一库
+工作目录 → 暂存区(git add) → 本地仓库(git commit) → 远程仓库(git push)
+逆向操作为：git checkout（撤销工作区修改）、git reset（回退版本）
+1.Github是一个代码/文件托管+保管+提交修改+评论修改的工具。
+2.GitHub主要操作一：创建一个仓库。可以理解为一个项目，一个模块，一个主题。创建仓库需要指定用户，仓库名，保密性，开源协议。
+3.Github主要操作二：上传文件或者文件夹。点击addfile添加空文件或者上传若干文件，/表示文件夹，文件夹不可为空。
+4.Github主要操作三：贡献操作之提交疑问或者描述和总结（Issues）。基于查看过代码仓库的前提提交问题和提交说明，仓库创建者有权利关闭问题并和网友评论问题以及添加标签。
+5.Github主要操作四：贡献操作之提交更改（Pull Requests）。看了人家仓库的东西觉得有地方需要改进，把东西改了加到仓库里合并，顺便添加描述。
+6.Github主要操作五：仓库可以公开可以私有，只要是遵循开源协议的公开仓库代码都可以拿去用，但是不同的开源协议要求不同。
+7.Github主要操作六：版本管理功能。
+8.Github主要操作七：学会搜索资源。
